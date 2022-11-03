@@ -1,0 +1,35 @@
+POST http://127.0.0.1:5000/books
+Content-Type: application/json
+
+{
+  "author": "JK2",
+      "book_name": "Harry Porter3",
+      "book_number": "004",
+      "book_prize": 39.9,
+      "book_publisher": "xx publisher",
+      "book_type": "Novel"
+
+}
+
+###
+GET http://127.0.0.1:5000/books/
+Accept: application/json
+
+###
+
+PUT http://127.0.0.1:5000/books/4
+Content-Type: application/json
+
+{
+      "author": "JK3",
+      "book_name": "Harry Porter4",
+      "book_number": "004",
+      "book_prize": 39.9,
+      "book_publisher": "xx publisher111",
+      "book_type": "Novel"
+
+
+}
+###
+DELETE http://127.0.0.1:5000/books/4
+Accept: application/json
